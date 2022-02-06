@@ -15,6 +15,7 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+line 5 output has got access to the local variable x line 7 has got access to the global variable x
 
 ## Question 2
 
@@ -34,6 +35,7 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+line 33 output: 10 line 34 output: undefined as y is local variable to the function f1, console.log outside the function doesnt have access to the variable
 
 ## Question 3
 
@@ -62,3 +64,6 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+first console.log is going to be value 9 as const x passed to the function is not going to be changed
+second console.log is going to be { x: 10 } as value of the key x in the object can be changed using reference
